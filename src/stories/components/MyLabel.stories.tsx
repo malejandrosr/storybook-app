@@ -9,6 +9,7 @@ const meta: Meta<typeof MyLabel> = {
 		size: { control: "select" },
 		color: { control: "select" },
 		fontColor: { control: "color" },
+		backgroundColor: { control: "color" },
 	},
 };
 
@@ -53,5 +54,14 @@ export const CustomFontColor: Story = {
 		label: "CustomFontColor",
 		size: "h1",
 		fontColor: "#5517ac",
+	},
+};
+
+export const CustomBackgroundColor: Story = {
+	args: {
+		label: "CustomBackgroundColor",
+		size: "h1",
+		fontColor: "#eeeeee",
+		backgroundColor: "#000000",
 	},
 };
